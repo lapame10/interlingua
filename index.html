@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Interlingua · aprende volando</title>
+<meta name="description" content="Curso de interlingua al estilo Duolingo. Lecciones cortas, ejercicios y racha diaria.">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- ===== RUTA ===== -->
+  <section id="ruta" class="pantalla activa">
+    <header class="barra">
+      <div class="barraIzq">
+        <div class="logo">🌍</div>
+        <div>
+          <div class="t1">Interlingua</div>
+          <div class="t2" id="subRuta">Unidad 1 · Salutationes</div>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat"><span>🔥</span><b id="racha">0</b></div>
+        <div class="stat"><span>⚡</span><b id="xp">0</b></div>
+        <div class="stat"><span>💎</span><b id="gemas">0</b></div>
+      </div>
+    </header>
+    <div id="mapa"></div>
+    <div class="pie"><button class="btnsec" id="reiniciar">Reiniciar progreso</button></div>
+  </section>
+
+  <!-- ===== LECCION ===== -->
+  <section id="leccion" class="pantalla">
+    <header class="barra lecbarra">
+      <button class="cerrar" id="salir" aria-label="salir">✕</button>
+      <div class="progreso"><div class="progresoIn" id="progIn"></div></div>
+      <div class="vidas" id="vidas"></div>
+    </header>
+    <div id="ejercicio"></div>
+    <footer class="acciones">
+      <div class="feedback" id="feedback"></div>
+      <button class="btn" id="accion" disabled>Comprobar</button>
+    </footer>
+  </section>
+
+  <!-- ===== FIN ===== -->
+  <section id="fin" class="pantalla">
+    <div class="finbox">
+      <div class="finico" id="finIco">🏆</div>
+      <h2 id="finTit">¡Lección completada!</h2>
+      <p id="finSub">Buen trabajo.</p>
+      <div class="finStats">
+        <div><b id="finXp">10</b><span>XP</span></div>
+        <div><b id="finPrec">100%</b><span>precisión</span></div>
+        <div><b id="finRacha">1</b><span>racha</span></div>
+      </div>
+      <button class="btn" id="continuar">Continuar</button>
+    </div>
+  </section>
+
+</div>
+
+<script src="curso.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
