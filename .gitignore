@@ -1,0 +1,4 @@
+# archivos de prueba locales (no se publican)
+_*.html
+_*.js
+.DS_Store
